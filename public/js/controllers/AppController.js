@@ -22,7 +22,7 @@ define(["require",
     	},
 		// Handlers
 		home: function(){
-			this.navigate("/layers", {trigger: true, replace: true});
+			this.navigate("/layers/970", {trigger: true, replace: true});
 		},
         showLayers: function () {
             console.log("AppController:showLayers");

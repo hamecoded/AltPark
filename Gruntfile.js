@@ -243,7 +243,7 @@ module.exports = function (grunt) {
         'clean:dist',    //delete directories: tmp, dist
         'compass:dist',  //compile sass to tmp dir
         'cssmin',        //minify + add banner + copy to dist dir
-        'jshint:dist',   //jsHint js source files under public/js
+        //'jshint:dist',   //jsHint js source files under public/js
         'requirejs',     //compile to tmp dir a single js file according to require config
         'replace:dist',  //replace in html file, variables with values, eg: appName and version + cacheBust and copy to tmp dir
         'preprocess:dist', //preprocess html ifs according to annotations and copy to dist dir
