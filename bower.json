@@ -1,0 +1,23 @@
+{
+  "name": "myBlog",
+  "version": "0.0.3",
+  "homepage": "https://github.com/hamecoded/myBlog",
+  "authors": [
+    "Oded Sagir <odedsagir@gmail.com>"
+  ],
+  "main": "dist/index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public",
+    "doc"
+  ],
+  "devDependencies": {
+    "bootstrap": "latest",
+    "marionette": "latest",
+    "requirejs": "latest",
+    "requirejs-text": "latest",
+    "mustache": "latest"
+  }
+}
