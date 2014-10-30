@@ -221,7 +221,7 @@ module.exports = function (grunt) {
                 files: [
                     {expand: true, cwd: 'public/', src: ['img/**'], dest: 'dist/'},
                     {expand: true, cwd: 'public/bower_components', src: ['**'], dest: 'dist/bower_components'},
-                   // {expand: true, cwd: 'public/templates', src: ['**'], dest: 'dist/templates'},
+                    {expand: true, cwd: '', src: ['CNAME','README.md'], dest: 'dist/'},
                     {expand: true, cwd: 'tmp/css/', src: ['<%= pkg.name %>.min.css'], dest: 'dist/css'}
                 ]
             },
