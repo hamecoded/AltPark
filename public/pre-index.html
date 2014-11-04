@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
 
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq_91BBy4ZbVONUZe4GSlIyry6wmQVXWk"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?language=iw&key=AIzaSyCq_91BBy4ZbVONUZe4GSlIyry6wmQVXWk"></script>
 	<!-- @if DEBUG=true -->
 	<link rel="stylesheet" href="/css/main.css" />
 	<script src="//localhost:35729/livereload.js"></script>
@@ -19,7 +19,10 @@
 
 </head>
 <body>
-	<div id="main"></div>
+	<div id="map-canvas"></div>
+	<div id="main">
+
+	</div>
 	<!-- @if DEBUG=true -->
 	<script type="text/javascript">
 		window.require= {
@@ -27,13 +30,13 @@
 		};
 	</script>
     <script type="text/javascript" 
-    	data-main="js/@APP_NAME.js" 
+    	data-main="/js/@APP_NAME.js" 
     	src="/bower_components/requirejs/require.js"></script>
    	<!-- @endif -->
 
 	<!-- @if DEBUG=false -->
     <script type="text/javascript" 
-    	data-main="js/@APP_NAME.js?rel=@@timestamp" 
+    	data-main="/js/@APP_NAME.js?rel=@@timestamp" 
     	src="/bower_components/requirejs/require.js?rel=@@timestamp"></script>
    	<!-- @endif -->
 </body>
